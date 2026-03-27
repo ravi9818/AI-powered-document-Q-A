@@ -1,0 +1,18 @@
+Embeddings and Vector Databases - Notes
+
+Embeddings are numerical representations of text, images, or data. They help computers understand similarity and meaning between words or sentences.
+
+For example, the words "king" and "queen" have similar embeddings, while "king" and "apple" are very different.
+
+Vector databases store these embeddings as vectors. When we search for something, the database finds the most similar vectors instead of exact keyword matches.
+
+RAG, or Retrieval-Augmented Generation, combines these ideas. It retrieves relevant text chunks using embeddings from a vector database, and then an LLM generates an answer based on that retrieved information.
+
+Steps in RAG:
+1. Indexing: Convert documents into embeddings and store them.
+2. Retrieval: Search for the most similar documents using embeddings.
+3. Generation: Use the retrieved context to answer the question.
+
+Popular vector databases include Chroma, FAISS, and Pinecone.
+
+This technique helps large language models answer questions about data they were not trained on directly.
